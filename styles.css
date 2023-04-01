@@ -7,7 +7,7 @@
 body{
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    background-color: rgb(11, 11, 11);
 }
 .image-container {
     width: 100%;
