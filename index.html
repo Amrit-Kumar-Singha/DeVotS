@@ -38,7 +38,7 @@
               <label for="aadhar-hash">Aadhar Hash</label>
               <input type="text" class="form-control" id="aadhar-hash" />
             </div>
-            <button type="submit" class="btn btn-success submit">Vote</button>
+            <button type="submit" class="btn btn-success submit" onclick="location.href='parties.html'">Vote</button>
           </form>
         </div>
       </div>
@@ -83,20 +83,20 @@
 
         // Update input fields from file
         const updateInputFields = () => {
-          const xhr = new XMLHttpRequest();
-          xhr.onreadystatechange = () => {
-            if (xhr.readyState === XMLHttpRequest.DONE) {
-              if (xhr.status === 200) {
-                const lines = xhr.responseText.split("\n");
+          const request = new XMLHttpRequest();
+          request.onreadystatechange = () => {
+            if (request.readyState === XMLHttpRequest.DONE) {
+              if (request.status === 200) {
+                const lines = request.responseText.split("\n");
                 document.querySelector("#aadhar-id").value = lines[0];
                 document.querySelector("#aadhar-hash").value = lines[1];
               } else {
-                console.log("Error retrieving file:", xhr.status);
+                console.log("Error retrieving file:", request.status);
               }
             }
           };
-          xhr.open("GET", "details.txt", true);
-          xhr.send();
+          request.open("GET", "details.txt", true);
+          request.send();
         };
 
         // Update input fields every 5 seconds

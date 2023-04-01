@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 *{
     font-family: 'Outfit', sans-serif;
     color: rgba(255, 255, 255, 0.877);
-    
+    overflow: hidden;
 }
 body{
     width: 100vw;
@@ -39,3 +40,64 @@ body{
     border-radius: 2px;
     background-color: rgb(171, 171, 171);
   }
+  .vote-option {
+    display: inline-block;
+    margin: 10px;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .vote-option:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #80D261;
+    transition: 0.2s ease-in-out;
+    
+  }
+  .vote-option {
+    display: inline-block;
+    margin: 20px;
+    padding: 50px;
+    margin: 30px;
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    border-radius: 20px;
+    background-color: rgb(58, 58, 58);
+}
+
+.vote-option img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    
+    padding-bottom: 40px;
+    transition: 0.2s ease-in-out;
+}
+.vote-option h3{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    font-family: "Raleway", sans-serif;
+}
+
+#vote-cast {
+    display: none;
+    margin-top: 50px;
+}
+
+.tick {
+    font-size: 120px;
+    color: green;
+    animation: tick 1s ease-in-out;
+}
+
+@keyframes tick {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
