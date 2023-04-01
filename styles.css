@@ -42,32 +42,31 @@ body{
   }
   .vote-option {
     display: inline-block;
-    margin: 10px;
+    margin: 25px;
     transition: 0.2s ease-in-out;
   }
   
   .vote-option:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 20px #80D261;
-    transition: 0.2s ease-in-out;
+    
+    transition: 0.4s ease-in-out;
     
   }
   .vote-option {
     display: inline-block;
-    margin: 20px;
     padding: 50px;
     margin: 30px;
-    width: 250px;
+    width: 200px;
     height: 250px;
     cursor: pointer;
-    transition: 0.2s ease-in-out;
+    transition: 0.5s ease-in-out;
     border-radius: 20px;
-    background-color: rgb(58, 58, 58);
+    background-color: rgb(46, 45, 45);
 }
 
 .vote-option img {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 10px;
     
     padding-bottom: 40px;

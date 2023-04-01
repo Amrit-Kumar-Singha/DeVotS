@@ -38,28 +38,8 @@
 		<p>Your vote has been cast.</p>
 	</div>
 	
-	<script>
-		// function to display the "vote cast" animation
-		function showVoteCast() {
-			// hide the vote options
-			document.querySelectorAll('.vote-option').forEach(function(element) {
-				element.style.display = 'none';
-			});
-			
-			// display the "vote cast" animation
-			document.getElementById('vote-cast').style.display = 'block';
-		}
+	<script src="scripts.js">
 		
-		// add event listeners to the vote options
-		document.getElementById('party1').addEventListener('click', function() {
-			showVoteCast();
-		});
-		document.getElementById('party2').addEventListener('click', function() {
-			showVoteCast();
-		});
-		document.getElementById('party3').addEventListener('click', function() {
-			showVoteCast();
-		});
 	</script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
