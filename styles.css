@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&display=swap');
+*{
+    font-family: 'Outfit', sans-serif;
+    color: rgba(255, 255, 255, 0.877);
+    
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+.image-container {
+    width: 100%;
+    height: 100vh;
+
+    background-image: url("path/to/image.jpg");
+    background-size: cover;
+    margin: auto;
+  }
+  /* CSS for the form */
+  .form-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  .lottie{
+    margin: auto;
+    margin-top: 20%;
+  }
+  .submit{
+    margin-top: 30px;
+  }
+
+  .inputs input{
+    width: 300px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(171, 171, 171);
+  }
